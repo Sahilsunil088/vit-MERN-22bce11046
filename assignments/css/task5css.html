@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #cccccc;
+        }
+        .container {
+            width: 60%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: yellowgreen;
+            display: flex;
+            border: 3px solid black;
+        }
+        .sidebar {
+            padding: 20px;
+            width: 200px;
+        }
+        .text_and_box {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .text_and_box a {
+            text-decoration: none;
+            color: black;
+            background-color: white;
+            padding: 5px;
+            border: 1px solid black;
+            width: 120px;
+            text-align: left;
+        }
+        .black {
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            margin-right: 10px;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        h1 {
+            color: purple;
+        }
+        .italic {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <div class="sidebar">
+            <div class="text_and_box">
+                <a href="#">Home page</a>
+                <div class="black"></div>
+            </div>
+            <div class="text_and_box">
+                <a href="#">Musings</a>
+                <div class="black"></div>
+            </div>
+            <div class="text_and_box">
+                <a href="#">My town</a>
+                <div class="black"></div>
+            </div>
+            <div class="text_and_box">
+                <a href="#">Links</a>
+                <div class="black"></div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <h1>My first styled page</h1>
+            <p>Welcome to my styled page!</p>
+            <p>It lacks images, but at least it has style. And it has links, even if they don’t go anywhere...</p>
+            <p>There should be more here, but I don’t know what yet.</p>
+            <hr>
+            <p class="italic">Made 5 April 2004<br>by myself.</p>
+        </div>
+    </div>
+</body>
+</html>

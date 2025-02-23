@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .container{
+            height:100vh;
+            width:100vw;
+            overflow:hidden;
+            background-color:darkgrey;
+        }
+        .smallcontainer{
+          background-color: #FED403;
+          margin-left:100px;
+            margin-right:100px;
+            height:100vh;
+        }
+        .header{
+            background-color:orange;
+            height:20vh;
+            padding-top:10px;
+            padding-left:20px;
+            overflow:hidden;
+        }
+        .icons{
+            display:flex;
+            justify-content:space-between;
+            margin-right:10px;
+        }
+        .nav{
+            margin-left:200px;
+            margin-top:40px;
+            width:100%;
+        }
+        .mid{
+          overflow:hidden;
+          height:60vh;
+        }
+        .mid img{
+             margin-right:100px;
+             object-fit:cover;
+        }
+        .footer{
+          display:grid;
+          grid-template-columns: 2fr 2fr 2fr;
+        
+        }
+        .grid1 img{
+          height:16vh;
+          margin:10px;
+          width:12vw;
+        }
+        .grid1{
+          background-color:black;
+          height:100vh;
+          display:flex;
+          overflow:hidden;
+        }
+        .grid1 p{
+          color:white;
+          margin-top:10px;
+          margin-right:20px;
+        }
+        .grid2 img{
+          height:16vh;
+          margin:10px;
+          width:12vw;   
+        }
+        .grid2{
+          display:flex;
+        }
+        .grid3{
+          display:flex;
+          background-color:black;
+          color:aliceblue;
+        }
+        .grid3 img{
+          height:16vh;
+          margin:10px;
+          width:12vw;   
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="smallcontainer">
+            <div class="header">
+                <div class="icons">
+                <h1 class="fs-2 fw-bold">Builderz</h1>
+                <div>
+                    <i class="bi bi-clock-fill"></i> Opening Hour <br> Mon - Fri, 8:00 - 9:00
+                </div>
+                <div>
+                    <i class="bi bi-telephone-fill"></i> Call Us <br> +012 345 6789
+                </div>
+                <div>
+                    <i class="bi bi-envelope-fill"></i> Email Us <br> info@example.com
+                </div>
+
+            </div>
+                <div class="nav"><nav class="navbar navbar-expand-lg bg-black">
+                    <div class="container-fluid">
+                      <a class="navbar-brand text-light" href="#">Home</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="#">About</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Service</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link disabled text-light" aria-disabled="true">Team</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link disabled text-light" aria-disabled="true">Project</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link disabled text-light" aria-disabled="true">Contact</a>
+                          </li>
+                        </ul>
+                        <form >
+                          
+                          <button class="btn btn-outline-success" type="submit">Get a quote</button>
+                        </form>
+                      </div>
+                    </div>
+                  </nav>
+                  </div>
+            </div>
+            <div class="mid">
+               <img src = "https://kathirconstruction.lyzoo.co.in/img/carousel-1.jpg"/>
+            </div>
+            <div class="footer">
+              <div class="grid1"><img src ="data:image/jpeg;base64,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"/>
+              <p>Expert worker
+              Lorem ipsum dolor sit amet aria-controls
+              ectetur adipisicing elit. Tenetur, minus!</p>
+              </div>
+              <div class="grid2"><img src = "https://img.freepik.com/free-vector/line-style-cityscape-building-background-urban-development_1017-44215.jpg"/>
+              <p>Quality work
+                <br>
+              Lorem ipsum dolor sit amet aria-controls
+              ectetur adipisicing elit. Tenetur, minus!</p></div>
+              <div class="grid3"> <img src = "data:image/png;base64,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"/>
+                <p>Support
+                  <br>
+                Lorem ipsum dolor sit amet aria-controls
+                ectetur adipisicing elit. Tenetur, minus!</p></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

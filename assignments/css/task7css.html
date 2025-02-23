@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .container{
+            height:80vh;
+            width:70vw;
+            margin:10vh  15vw ;
+            background-color:darkviolet;
+            overflow:hidden;
+        }
+        .smallcontainer{
+            background-color:darkmagenta;
+            height:60vh;
+            width:60vw;
+            margin-left:7%;
+            margin-top:70px;
+            overflow:hidden;
+        }
+        .grid{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(8,40px);
+            margin:20px;
+           padding-left:200px;
+            color:aliceblue;
+        }
+        .form{
+            height:30px;
+            width:250px;
+            padding-left:10px;
+        }
+        .form1{
+               width:250px;
+               height:50px;
+               padding-left:20px;
+        }
+        .radiobuttons{
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-right:150px;
+        }
+        .dropdown{
+            height:30px;
+            width:150px;
+            padding-left:10px;
+        }
+        .arrow{
+            margin-right:50px;
+        }
+        .footer{
+            margin-left:30%;    
+            margin-top:50px;
+            background-color:aliceblue;
+            color:black;
+            height:60px;
+            width:100%;
+            text-align: center;
+            padding-top:10px;
+            border-radius: 20px;;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="smallcontainer">
+            <div class="grid">
+                <div>Name:</div>
+                <div><input type = "text" class = "form" placeholder = "your name.."></div>
+
+                <div>Email:</div>
+                <div><input type = "text" class = "form" placeholder = "your email.."></div>
+
+                <div>Password:</div>
+                <div><input type = "text" class = "form" ></div>
+
+                <div>Phone Number:</div>
+                <div><input type = "text" class = "form" ></div>
+
+                <div>Gender:</div>
+                <div class = "radiobuttons">
+                      <label for="html">Male:</label>
+                    <input type="radio"  name="fav_language" ><br>
+                    <label for="html">Female:</label>
+                    <input type="radio"  name="fav_language" ><br>
+                    <label for="html">Other:</label>
+                    <input type="radio"  name="fav_language" ><br>
+                </div>
+                               
+                <div>language:</div>
+                <div><input type = "text" class = "dropdown" placeholder = "selectlanguage">  <span class="arrow">&#9662;</span> <!-- Downward arrow symbol --></div>
+
+                <div>Zip Code:</div>
+                <div><input type = "text" class = "form" ></div>
+                               
+                <div>About:</div>
+                <div><input type = "text" class = "form1" placeholder = "write about yourself"></div>
+               
+                <div class="footer">
+                    <h1>Register</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
